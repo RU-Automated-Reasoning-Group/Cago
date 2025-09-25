@@ -14,10 +14,15 @@ If you find our paper or code useful, please reference us:
 
 Cago (Capability-Aware Goal Sampling) is a new learning-from-demonstrations framework that explicitly aligns the agent’s learning process with its evolving capabilities. Unlike prior methods that use demonstrations for direct imitation, reward shaping, or offline pretraining, Cago treats demonstrations as structured roadmaps. It continuously monitors which parts of a demonstration the agent can already reach and leverages this signal to sample intermediate goal states in the demonstration, those at the boudary of the agent’s current goal-reaching capabilities. At each episode, a goal-conditioned agent first attempts to reach the sampled goal and then explores forward from it, generating informative, task-relevant data for policy optimization. This iterative process of capability-aware goal selection and curriculum-aligned exploration enables steadily progress toward solving the full task.
 
-<img src="imgs/method_new.png" alt="Cago-Framework" width="800" />
+<figure style="display: inline-block;">
+  <img src="imgs/method_new.png" alt="Cago-Framework" width="800" />
+  <figcaption align="left">
+Left: Directly setting the final goal as the agent’s target often leads to failure, as the current policy may not yet be capable of reaching it. 
+Right: Cago improves learning by leveraging a visitation frequency dictionary built from demonstrations. Given a demonstration trajectory with subgoals, the agent selects the furthest subgoal that remains within its current capabilities for Go-Explore sampling, enabling a curriculum of progressively more challenging goals aligned with the demonstration.</figcaption>
+</figure>
 
-Left: Directly setting the final goal as the agent’s target often leads to failure, as the current policy $\pi^G$ may not yet be capable of reaching it. The shaded region illustrates the set of states currently reachable under $\pi^G$. Attempting to reach $g_{final}$ (i.e., executing $\pi^G(\cdot|\cdot, g_{final})$)  causes the agent to diverge from the demonstration trajectory.
-Right: Cago improves learning by leveraging a visitation frequency dictionary $Dict_{visit}$ built from demonstrations. Given a demonstration trajectory with subgoals $g_1, g_2, \dots, g_n$, the agent selects the furthest subgoal $g_i$ that remains within its current capabilities for Go-Explore sampling, enabling a curriculum of progressively more challenging goals aligned with the demonstration.
+
+
 
 An example of the progress of capability-aware goal sampling in MetaWorld StickPush:
 
