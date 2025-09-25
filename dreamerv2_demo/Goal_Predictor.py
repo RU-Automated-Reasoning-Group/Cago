@@ -1175,7 +1175,6 @@ class ImageGP_Dataset(Dataset):
         return self.inputs[idx], self.targets[idx]
 
 
-
 class Image_Goal_Predictor:
     def __init__(self):
         
