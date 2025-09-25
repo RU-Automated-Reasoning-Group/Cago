@@ -21,8 +21,7 @@ Left: Directly setting the final goal as the agent’s target often leads to fai
 Right: Cago improves learning by leveraging a visitation frequency dictionary built from demonstrations. Given a demonstration trajectory with subgoals, the agent selects the furthest subgoal that remains within its current capabilities for Go-Explore sampling, enabling a curriculum of progressively more challenging goals aligned with the demonstration.</figcaption>
 </figure>
 
-
-
+<br>
 
 An example of the progress of capability-aware goal sampling in MetaWorld StickPush:
 
