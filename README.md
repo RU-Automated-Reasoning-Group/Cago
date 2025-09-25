@@ -15,11 +15,11 @@ If you find our paper or code useful, please reference us:
 Cago (Capability-Aware Goal Sampling) is a new learning-from-demonstrations framework that explicitly aligns the agent’s learning process with its evolving capabilities. Unlike prior methods that use demonstrations for direct imitation, reward shaping, or offline pretraining, Cago treats demonstrations as structured roadmaps. It continuously monitors which parts of a demonstration the agent can already reach and leverages this signal to sample intermediate goal states in the demonstration, those at the boudary of the agent’s current goal-reaching capabilities. At each episode, a goal-conditioned agent first attempts to reach the sampled goal and then explores forward from it, generating informative, task-relevant data for policy optimization. This iterative process of capability-aware goal selection and curriculum-aligned exploration enables steadily progress toward solving the full task.
 
 
-<img src="imgs/method_new.png" alt="Cago-Framework" width="500" />
+<img src="imgs/method_new.png" alt="Cago-Framework" width="800" />
 
 An example of the progress of capability-aware goal sampling in MetaWorld StickPush:
 
-<img src="imgs/goal_distribution.png" alt="sampling" width="500" />
+<img src="imgs/goal_distribution.png" alt="sampling" width="300" />
 
 ## Cago Goal Predictor
 
@@ -40,7 +40,7 @@ For our experiments, we evaluate and compare Cago against several baselines acro
 
 Cago presents a new paradigm to utilize demonstrations: it dynamically tracks the agent's competence along demonstrated trajectories and uses this signal to select intermediate states in the demonstrations that are just beyond the agent's current reach as goals to guide online trajectories collecting. To evaluate this novel perspective, we compared Cago against state-of-the-art baselines that represent diverse strategies for learning from demonstrations.
 
-<img src="imgs/Exp-main-results.png" alt="Exp-results" width="500" />
+<img src="imgs/Exp-main-results.png" alt="Exp-results" width="800" />
 
 
 ## Code Structure
