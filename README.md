@@ -1,4 +1,4 @@
-# Learning from Demonstrations via Capability-Aware Goal Sampling(Cago)
+# Learning from Demonstrations via Capability-Aware Goal Sampling (Cago)
 Yuanlin Duan, Yuning Wang, Wenjie Qiu and He Zhu
 
 Paper Link: 
@@ -32,9 +32,11 @@ At training time, the goal-conditioned policy $\pi^G(\cdot \mid \cdot, g)$ is tr
 For our experiments, we evaluate and compare Cago against several baselines across three robot environment suites with sparse rewards: [MetaWorld](https://github.com/Farama-Foundation/Metaworld), [Adroit](https://robotics.farama.org/envs/adroit_hand/), and [Maniskill](https://maniskill.readthedocs.io/en/latest/user_guide/index.html).
 
 
-<img src="imgs/Env-MetaWorld.png" alt="Env-MetaWorld" width="500" />
-<img src="imgs/Env-AdroitHand.png" alt="Env-AdroitHand" width="500" />
-<img src="imgs/Env-Maniskill.png" alt="Env-Maniskill" width="500" />
+<img src="imgs/Env-MetaWorld.png" alt="Env-MetaWorld" width="800" />
+
+| Env-AdroitHand | Env-Maniskill |
+|----------------|---------------|
+| <img src="imgs/Env-AdroitHand.png" width="350" /> | <img src="imgs/Env-Maniskill.png" width="350" /> |
 
 ## Experiment results
 
