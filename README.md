@@ -1,4 +1,4 @@
-# Learning World Models for Unconstrained Goal Navigation (MUN)
+# Learning from Demonstrations via Capability-Aware Goal Sampling(Cago)
 Yuanlin Duan, Yuning Wang, Wenjie Qiu and He Zhu
 
 Paper Link: 
