@@ -34,9 +34,10 @@ For our experiments, we evaluate and compare Cago against several baselines acro
 
 <img src="imgs/Env-MetaWorld.png" alt="Env-MetaWorld" width="800" />
 
-| Env-AdroitHand | Env-Maniskill |
-|----------------|---------------|
-| <img src="imgs/Env-AdroitHand.png" width="350" /> | <img src="imgs/Env-Maniskill.png" width="350" /> |
+<div style="display: flex; gap: 20px;">
+  <img src="imgs/Env-AdroitHand.png" alt="Env-AdroitHand" width="350" />
+  <img src="imgs/Env-Maniskill.png" alt="Env-Maniskill" width="350" />
+</div>
 
 ## Experiment results
 
