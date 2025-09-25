@@ -22,6 +22,7 @@ Right: Cago improves learning by leveraging a visitation frequency dictionary bu
 </figure>
 
 <br>
+<br>
 
 An example of the progress of capability-aware goal sampling in MetaWorld StickPush:
 
