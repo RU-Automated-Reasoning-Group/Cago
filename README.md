@@ -32,15 +32,15 @@ At training time, the goal-conditioned policy $\pi^G(\cdot \mid \cdot, g)$ is tr
 For our experiments, we evaluate and compare Cago against several baselines across three robot environment suites with sparse rewards: [MetaWorld](https://github.com/Farama-Foundation/Metaworld), [Adroit](https://robotics.farama.org/envs/adroit_hand/), and [Maniskill](https://maniskill.readthedocs.io/en/latest/user_guide/index.html).
 
 
-<img src="imgs/Env-MetaWorld.png" alt="Env-MetaWorld" width="800" />
-<img src="imgs/Env-AdroitHand.png" alt="Env-AdroitHand" width="800" />
-<img src="imgs/Env-Maniskill.png" alt="Env-Maniskill" width="800" />
+<img src="imgs/Env-MetaWorld.png" alt="Env-MetaWorld" width="700" />
+<img src="imgs/Env-AdroitHand.png" alt="Env-AdroitHand" width="700" />
+<img src="imgs/Env-Maniskill.png" alt="Env-Maniskill" width="700" />
 
 ## Experiment results
 
 Cago presents a new paradigm to utilize demonstrations: it dynamically tracks the agent's competence along demonstrated trajectories and uses this signal to select intermediate states in the demonstrations that are just beyond the agent's current reach as goals to guide online trajectories collecting. To evaluate this novel perspective, we compared Cago against state-of-the-art baselines that represent diverse strategies for learning from demonstrations.
 
-<img src="imgs/Exp-main-results.png" alt="Exp-results" width="800" />
+<img src="imgs/Exp-main-results.png" alt="Exp-results" width="700" />
 
 
 ## Code Structure
