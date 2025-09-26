@@ -1,14 +1,14 @@
 import os
 # os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import tensorflow as tf
-from dreamerv2_demo import common
+from method import common
 # import envs
 import envs
 import random
 import numpy as np
 import collections
 import matplotlib.pyplot as plt
-from dreamerv2_demo.common.replay import convert
+from method.common.replay import convert
 import pathlib
 import sys
 import ruamel.yaml as yaml
@@ -36,7 +36,7 @@ import warnings
 
 import gc_agent
 import common
-import dreamerv2_demo.gc_goal_picker as gc_goal_picker
+import method.gc_goal_picker as gc_goal_picker
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 logging.getLogger().setLevel('ERROR')

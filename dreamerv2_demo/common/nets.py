@@ -8,7 +8,7 @@ from tensorflow.keras import layers as tfkl
 from tensorflow_probability import distributions as tfd
 from tensorflow.keras.mixed_precision import experimental as prec
 
-import dreamerv2_demo.common as common
+import method.common as common
 from time import time
 
 import torch  # for L3P

@@ -14,7 +14,7 @@ import json
 
 import yaml
 import pathlib
-from dreamerv2_demo import common
+from method import common
 import sys
 import random
 from sklearn.tree import DecisionTreeClassifier
@@ -1328,7 +1328,7 @@ if __name__ == '__main__':
     GP = Image_Goal_Predictor()
     GP.main()
 
-# python dreamerv2_demo/Goal_Predictor.py --configs AdroitDoor
+# python method/Goal_Predictor.py --configs AdroitDoor
 
 
 

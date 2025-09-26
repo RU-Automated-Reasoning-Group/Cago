@@ -19,7 +19,7 @@ import h5py
 import pickle
 import imageio
 import json
-from dreamerv2_demo.Goal_Predictor import Goal_Predictor, get_demo_trajectories, Find_important_dim
+from method.Goal_Predictor import Goal_Predictor, get_demo_trajectories, Find_important_dim
 import random
 import tensorflow as tf
 from sklearn.decomposition import PCA

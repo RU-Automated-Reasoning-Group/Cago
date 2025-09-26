@@ -73,13 +73,13 @@ ENV_NAMES = [
 for env_name in ENV_NAMES:
     register(
         id=f'meta_{env_name}',
-        entry_point="dreamerv2_demo.common.metaworld_envs:MetaWorldSawyerEnv", 
+        entry_point="method.common.metaworld_envs:MetaWorldSawyerEnv", 
         kwargs={"env_name": env_name}
     )
 
 for env_name in ENV_NAMES:
     register(
         id=f'meta_image_{env_name}',
-        entry_point="dreamerv2_demo.common.metaworld_envs:MetaWorldSawyerImageEnv", 
+        entry_point="method.common.metaworld_envs:MetaWorldSawyerImageEnv", 
         kwargs={"env_name": env_name}
     )

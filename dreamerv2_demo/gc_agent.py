@@ -5,8 +5,8 @@ from tensorflow.keras import mixed_precision as prec
 import numpy as np
 
 import common
-import dreamerv2_demo.explorer as explorer
-import dreamerv2_demo.nor_agent as nor_agent
+import method.explorer as explorer
+import method.nor_agent as nor_agent
 import sys
 import os
 
@@ -14,7 +14,7 @@ from torch.optim import Adam
 import torch
 import random
 import pathlib
-from dreamerv2_demo.Goal_Predictor import get_demo_trajectories
+from method.Goal_Predictor import get_demo_trajectories
 
 
 

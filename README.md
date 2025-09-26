@@ -54,11 +54,11 @@ Cago presents a new paradigm to utilize demonstrations: it dynamically tracks th
 
 ```
 Cago/
-  |- Config/                         # Config file for each environment.
-  |- dreamerv2_demo/                 # Dreamer-v2 MBRL cornerstone
-  |- dreamerv2_demo/gc_goal_picker   # Cago goal picking strategy implementation
-  |- dreamerv2_demo/Goal_Predictor   # Cago goal predictor for evaluation
-  |- dreamerv2_demo/gc_main.py       # Main running file
+  |- Config/                 # Config file for each environment.
+  |- method/                 # Whole framework with Dreamer-v2 MBRL cornerstone
+  |- method/gc_goal_picker   # Cago goal picking strategy implementation
+  |- method/Goal_Predictor   # Cago goal predictor for evaluation
+  |- method/gc_main.py       # Main running file
 ```
 
 
@@ -92,7 +92,7 @@ Then unzip it to a folder called Demo under Cago/.
 Training Scripts:
 
 ```bash
-python dreamerv2_demo/gc_main.py --configs Meta_Disassemble(environment name in config file) --gpu_index 0 --demo_search_strategy 21 --expl_behavior 'Demo_BC_Explorer' --train_every 1 --steps 1000000 --logdir "your logdir path"
+python method/gc_main.py --configs Meta_Disassemble(environment name in config file) --gpu_index 0 --demo_search_strategy 21 --expl_behavior 'Demo_BC_Explorer' --train_every 1 --steps 1000000 --logdir "your logdir path"
 ```
 
 Use the tensorboard to monitor training progress.
