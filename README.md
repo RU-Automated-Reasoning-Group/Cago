@@ -7,7 +7,15 @@ Code for "Learning from Demonstrations via Capability-Aware Goal Sampling" (Neur
 
 If you find our paper or code useful, please reference us:
 ```
-
+@misc{duan2026learningdemonstrationscapabilityawaregoal,
+      title={Learning from Demonstrations via Capability-Aware Goal Sampling}, 
+      author={Yuanlin Duan and Yuning Wang and Wenjie Qiu and He Zhu},
+      year={2026},
+      eprint={2601.08731},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2601.08731}, 
+}
 ```
 
 ## Cago Framework:
