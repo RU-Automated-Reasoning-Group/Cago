@@ -1,7 +1,7 @@
 # Learning from Demonstrations via Capability-Aware Goal Sampling (Cago)
 Yuanlin Duan, Yuning Wang, Wenjie Qiu and He Zhu
 
-Paper Link: 
+Paper Link: https://arxiv.org/abs/2601.08731
 
 Code for "Learning from Demonstrations via Capability-Aware Goal Sampling" (NeurIPS 2025).
 
